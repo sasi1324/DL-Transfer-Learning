@@ -24,8 +24,8 @@ Evaluate the model with test accuracy, confusion matrix, classification report, 
 
 ## PROGRAM
 
-**Name :** KARTHIKEYAN R
-**Register Number :** 212222240046
+**Name :** SASINTHARA S
+**Register Number :** 212223110045
 
 ```python
 import torch as t
