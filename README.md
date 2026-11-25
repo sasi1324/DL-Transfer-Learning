@@ -1,33 +1,47 @@
 # DL- Developing a Neural Network Classification Model using Transfer Learning
 
+
 ## AIM
 To develop an image classification model using transfer learning with VGG19 architecture for the given dataset.
 
+## Neural Network Model
+<img width="987" height="792" alt="image" src="https://github.com/user-attachments/assets/21628847-e5b6-4e28-8df6-2cc7f183857f" />
+
+
 ## DESIGN STEPS
 ### STEP 1: 
+
 Import required libraries and define image transforms.
 
 ### STEP 2: 
+
 Load training and testing datasets using ImageFolder.
 
 ### STEP 3: 
+
 Visualize sample images from the dataset.
 
 ### STEP 4: 
+
 Load pre-trained VGG19, modify the final layer for binary classification, and freeze feature extractor layers.
 
 ### STEP 5: 
+
 Define loss function (BCEWithLogitsLoss) and optimizer (Adam). Train the model and plot the loss curve.
 
 ### STEP 6: 
+
 Evaluate the model with test accuracy, confusion matrix, classification report, and visualize predictions.
+
 
 ## PROGRAM
 
-**Name :** SASINTHARA S
-**Register Number :** 212223110045
+### Name: AHAMADH SULAIMAN M
+
+### Register Number: 212224230009
 
 ```python
+
 import torch as t
 import torch.nn as nn
 import torch.optim as optim
@@ -180,22 +194,29 @@ def predict_image(model,image_index,dataset):
   plt.show()
 predict_image(model,image_index=55,dataset=test_dataset)
 predict_image(model,image_index=25,dataset=test_dataset)
+
 ```
+
 ### OUTPUT
 
 ## Training Loss, Validation Loss Vs Iteration Plot
-![training and validation loss plot](https://github.com/user-attachments/assets/1d87ce9a-920d-4e4d-8b40-53e5eda1ede3)
+
+<img width="788" height="626" alt="image" src="https://github.com/user-attachments/assets/f32f6ffb-3311-4776-9061-5ddc6b326b08" />
+
 
 ## Confusion Matrix
-![Confusion Matrix](https://github.com/user-attachments/assets/124fc61d-5797-4f05-b563-7a8ee582dfc5)
+
+<img width="763" height="672" alt="image" src="https://github.com/user-attachments/assets/aaa2670b-04dd-4a2c-af05-1b7c9c89601c" />
+
 
 ## Classification Report
-![Screenshot 2025-05-15 144201](https://github.com/user-attachments/assets/c928c653-9f1e-4834-85e7-ec5bd823ff06)
+
+<img width="536" height="217" alt="image" src="https://github.com/user-attachments/assets/52ed6704-124c-4a04-93d7-d8102e2cee5e" />
 
 ### New Sample Data Prediction
-![Screenshot 2025-05-15 144227](https://github.com/user-attachments/assets/cb02ea61-8425-434b-b584-5fa354e01bef)
+<img width="393" height="471" alt="image" src="https://github.com/user-attachments/assets/35924c4f-269b-47fc-825d-e24f1023b7ce" />
+<img width="412" height="478" alt="image" src="https://github.com/user-attachments/assets/eff2c58f-4208-4d88-97c6-78d84c4ea401" />
 
-![Screenshot 2025-05-15 144232](https://github.com/user-attachments/assets/1164f9df-21b1-4758-9c68-6b008a987fe2)
 
 ## RESULT
 VGG19 model was fine-tuned and tested successfully. The model achieved good accuracy with correct predictions on sample test images.
